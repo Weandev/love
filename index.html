@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imager/png" href="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/311569275_143805088393107_5667855525013024666_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=t1ispSmstEQAX8Umszr&_nc_ht=scontent.fhan15-1.fna&oh=00_AfAp3R3svH5M5qaE-NvmwLaPHMQaO_5agt4W9Utk4RYm2w&oe=640DB6EF" />
+    <!-- 0. Tiêu đề website -->
+    <title>Đếm Ngày Mình có nhau :3</title>
+    <style>
+        .snowflake {
+color: red;
+}
+@-webkit-keyframes snowflakes-fall {
+0% {
+top: -10%;
+}
+100% {
+top: 100%;
+}
+}
+@-webkit-keyframes snowflakes-shake {
+0% {
+-webkit-transform: translateX(0px);
+transform: translateX(0px);
+}
+50% {
+-webkit-transform: translateX(80px);
+transform: translateX(80px);
+}
+100% {
+-webkit-transform: translateX(0px);
+transform: translateX(0px);
+}
+}
+@keyframes snowflakes-fall {
+0% {
+top: -10%;
+}
+100% {
+top: 100%;
+}
+}
+@keyframes snowflakes-shake {
+0% {
+transform: translateX(0px);
+}
+50% {
+transform: translateX(80px);
+}
+100% {
+transform: translateX(0px);
+}
+}
+.snowflake {
+position: fixed;
+top: -10%;
+z-index: 9999;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+cursor: default;
+-webkit-animation-name: snowflakes-fall, snowflakes-shake;
+-webkit-animation-duration: 10s, 3s;
+-webkit-animation-timing-function: linear, ease-in-out;
+-webkit-animation-iteration-count: infinite, infinite;
+-webkit-animation-play-state: running, running;
+animation-name: snowflakes-fall, snowflakes-shake;
+animation-duration: 10s, 3s;
+animation-timing-function: linear, ease-in-out;
+animation-iteration-count: infinite, infinite;
+animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+left: 1%;
+-webkit-animation-delay: 0s, 0s;
+animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+left: 10%;
+-webkit-animation-delay: 1s, 1s;
+animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+left: 20%;
+-webkit-animation-delay: 6s, 0.5s;
+animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+left: 30%;
+-webkit-animation-delay: 4s, 2s;
+animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+left: 40%;
+-webkit-animation-delay: 2s, 2s;
+animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+left: 50%;
+-webkit-animation-delay: 8s, 3s;
+animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+left: 60%;
+-webkit-animation-delay: 6s, 2s;
+animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+left: 70%;
+-webkit-animation-delay: 2.5s, 1s;
+animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+left: 80%;
+-webkit-animation-delay: 1s, 0s;
+animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+left: 90%;
+-webkit-animation-delay: 3s, 1.5s;
+animation-delay: 3s, 1.5s;
+}
+    </style>
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake" style="font-size: 30px;">❤</div>
+        <div class="snowflake">💕</div>
+        <div class="snowflake" style="font-size: 40px;">❤ </div>
+        <div class="snowflake">💕</div>
+        <div class="snowflake" style="font-size: 30px;">💕</div>
+        <div class="snowflake" style="font-size: 22px;">💕</div>
+        <div class="snowflake" style="font-size: 50px;">❤</div>
+        <div class="snowflake" style="font-size: 20px;">💕</div>
+        <div class="snowflake" style="font-size: 70px;">❤</div>
+        <div class="snowflake" style="font-size: 20px;">❤</div>
+        </div>
+    <div id="wrapper">
+        <!-- 1. Tiêu đề -->
+        <h1>Love you</h1>
+        <h2> Happy Women day 8/3 </h2>
+
+        <div id="clock-box">
+            <div id="clock">
+                <!-- Nơi hiển thì số ngày yêu nhau (bạn không cân thay đổi gì cũng được) -->
+                <date>0 Ngày</date>
+                <time>00:00:00</time>
+            </div>
+        </div>
+
+        <div id="info">
+            <div class="one">
+                <!-- 3. Ảnh của bạn nam -->
+                <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/310554895_105133925711343_3792492471726274920_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MUZWsTJ7OosAX_OMa-6&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAtZKzKeLRe8TuN54-meZeDNHw2h9_LdhGuEcMzpUlM4w&oe=640DF059" class="avt">
+                <!-- 4. Tên bạn nam -->
+                <h1>Nin:></h1>
+                <p>20/4/2007</p>
+            </div>
+            <div id="heart">
+                ❤
+                <anni>...</anni>
+            </div>
+            <div class="two">
+                <!-- 5. Ảnh của bạn nữ -->
+                <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/311569275_143805088393107_5667855525013024666_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=t1ispSmstEQAX8Umszr&_nc_ht=scontent.fhan15-1.fna&oh=00_AfAp3R3svH5M5qaE-NvmwLaPHMQaO_5agt4W9Utk4RYm2w&oe=640DB6EF" class="avt">
+
+                <!-- 6. Tên của bạn nữ -->
+                <h1>Tuýt💕</h1>
+                <p>24/6/2007</p>
+            </div>
+        </div>
+
+        <!-- Phần play nhạc (không cần thay đổi) -->
+        <!--<div id="music">
+            <audio loop autoplay controls>Trình duyệt của bạn không hỗ trợ các yếu tố âm thanh.</audio>
+        </div>-->
+
+        <!-- 7. Tiêu đề bên dưới -->
+        <footer>💕 I Love Your Smile T 💕</footer>
+    </div>
+    <iframe src="https://www.nhaccuatui.com/mh/background/Gg8jNDAqxLnU" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    <script src="app.js"></script>
+</body>
+
+</html>
